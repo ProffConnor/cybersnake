@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSnake - Jogo da Cobrinha Cyberpunk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="600" height="600"></canvas>
+        
+        <div id="score-display">Pontos: 0</div>
+        <div id="level-display">Nível: 1</div>
+        
+        <div id="menu">
+            <h1 class="neon-text pulse">CYBER SNAKE</h1>
+            <button id="start-btn">INICIAR JOGO</button>
+            <button id="options-btn">OPÇÕES</button>
+        </div>
+        
+        <div id="options">
+            <h2 class="neon-text">SKINS</h2>
+            <div id="skins">
+                <div class="skin-option" data-skin="blue" style="background-color: #0a0a1a; color: #0ff; border-color: #0ff;">Azul</div>
+                <div class="skin-option" data-skin="pink" style="background-color: #0a0a1a; color: #ff00ff; border-color: #ff00ff;">Rosa</div>
+                <div class="skin-option" data-skin="green" style="background-color: #0a0a1a; color: #00ff00; border-color: #00ff00;">Verde</div>
+                <div class="skin-option" data-skin="purple" style="background-color: #0a0a1a; color: #9900ff; border-color: #9900ff;">Roxo</div>
+                <div class="skin-option" data-skin="orange" style="background-color: #0a0a1a; color: #ff9900; border-color: #ff9900;">Laranja</div>
+                <div class="skin-option" data-skin="cyan" style="background-color: #0a0a1a; color: #00ffff; border-color: #00ffff;">Ciano</div>
+            </div>
+            <button id="back-btn">VOLTAR</button>
+        </div>
+        
+        <div id="game-over">
+            <h2 class="neon-text">GAME OVER</h2>
+            <div id="final-score" style="font-size: 1.5em; margin-bottom: 20px;">Pontuação: 0</div>
+            <button id="restart-btn">JOGAR NOVAMENTE</button>
+            <button id="menu-btn">MENU PRINCIPAL</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
